@@ -1,0 +1,37 @@
+package com.cartoon.app;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Cartoon implements Serializable{
+	
+	@Id
+	private int cartoonId;
+	
+	public int getCartoonId() {
+		return cartoonId;
+	}
+	public void setCartoonId(int cartoonId) {
+		this.cartoonId = cartoonId;
+	}
+	public String getCartoonName() {
+		return cartoonName;
+	}
+	public void setCartoonName(String cartoonName) {
+		this.cartoonName = cartoonName;
+	}
+	public String getFavChar() {
+		return favChar;
+	}
+	public void setFavChar(String favChar) {
+		this.favChar = favChar;
+	}
+	private String cartoonName;
+	private String favChar;
+	
+	
+	
+}
