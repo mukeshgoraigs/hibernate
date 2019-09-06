@@ -12,7 +12,10 @@ public class Student implements Serializable{
 
 	
 
-
+	@Override
+	public String toString() {
+		return "Student [roll=" + roll + ", name=" + name + ", branch=" + branch + "]";
+	}
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -39,10 +42,7 @@ public class Student implements Serializable{
 		this.branch = branch;
 	}
 	
-	@Override
-	public String toString() {
-		return "Student [roll=" + roll + ", name=" + name + ", branch=" + branch + "]";
-	}
+	
 	
 	
 }

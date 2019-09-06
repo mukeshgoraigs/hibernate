@@ -10,10 +10,6 @@ import javax.persistence.Id;
 @Entity
 public class Student implements Serializable{
 
-	
-
-
-
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int roll;
@@ -38,10 +34,10 @@ public class Student implements Serializable{
 	public void setBranch(String branch) {
 		this.branch = branch;
 	}
-	
 	@Override
 	public String toString() {
-		return "Student [roll=" + roll + ", name=" + name + ", branch=" + branch + "]";
+		// TODO Auto-generated method stub
+		return super.toString();
 	}
 	
 	
